@@ -28,7 +28,7 @@ public class Cart {
         }
         else {
             itemOrdered[qtyOrdered++] = disc;
-            System.out.println("The disc has been added.");
+            System.out.println("The disc " + disc.getTitle() + " has been added.");
         	
         }
     }
@@ -43,15 +43,40 @@ public class Cart {
         }
         return total;
     }
-    
     public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
     	for(DigitalVideoDisc disc : dvdList) {
     		if(qtyOrdered != MAX_NUMBERS_ORDERED) {
+    			System.out.println("The disc " + disc.getTitle() + " has been added");
     			itemOrdered[qtyOrdered++] = disc;
-    			System.out.println("The disc " + dvd.getTile() + "has been added");
     		}
     		else {
-    			System.out.println("The cart is almost full");
+    			System.out.println("The cart is almost full. Cannot add more.");
+    		}
+    	}
+    }
+//    public void addDigitalVideoDisc(DigitalVideoDisc... disc) {
+//    	for(DigitalVideoDisc disc : disc) {
+//    		if(qtyOrdered != MAX_NUMBERS_ORDERED) {
+//    			System.out.println("The disc " + disc.getTitle() + " has been added");
+//    			itemOrdered[qtyOrdered++] = disc;
+//    		}
+//    		else {
+//    			System.out.println("The cart is almost full. Cannot add more.");
+//   		}
+//    	}
+//    } khong the nap chong phuong thuc nhu vay
+    public void addDigitalVideoDisc(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2) {
+    	if(qtyOrdered == MAX_NUMBERS_ORDERED) {
+    		System.out.println("The cart is almost full. Cannot add more.");
+    	}
+    	else {
+    		itemOrdered[qtyOrdered++] = dvd1;
+    		if(qtyOrdered == MAX_NUMBERS_ORDERED) {
+    			System.out.println("The disc " + dvd1.getTitle() + " has been added but the cart is almost full. Cannot add the disc " + dvd2.getTitle());
+    		}
+    		else {
+    			itemOrdered[qtyOrdered++] = dvd2;
+    			System.out.println("The disc " + dvd1.getTitle() + " and the disc " + dvd2.getTitle() + " has been added." );
     		}
     	}
     }
