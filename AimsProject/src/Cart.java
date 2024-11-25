@@ -44,15 +44,5 @@ public class Cart {
         return total;
     }
     
-    public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
-    	for(DigitalVideoDisc disc : dvdList) {
-    		if(qtyOrdered != MAX_NUMBERS_ORDERED) {
-    			itemOrdered[qtyOrdered++] = disc;
-    			System.out.println("The disc " + dvd.getTile() + "has been added");
-    		}
-    		else {
-    			System.out.println("The cart is almost full");
-    		}
-    	}
-    }
+    
 }
