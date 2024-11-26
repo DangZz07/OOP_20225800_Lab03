@@ -3,29 +3,6 @@ public class Cart {
     private DigitalVideoDisc itemOrdered[] = new DigitalVideoDisc[MAX_NUMBERS_ORDERED];
     public int qtyOrdered=0;
     
-    
-    public void search(int id) {
-    	for(int i = 0; i < qtyOrdered; i++) {
-    		if(id == itemOrdered[i].getID()) {
-    			DigitalVideoDisc dvd = itemOrdered[i];
-        		System.out.printf("%d. %s\n", i, dvd.toString());
-    		}
-    		else {
-    			System.out.println("Not found the disc");
-    		}
-    	}
-    }
-    public void search(String title) {
-    	for(int i = 0; i < qtyOrdered; i++) {
-    		if(title == itemOrdered[i].getTitle()) {
-    			DigitalVideoDisc dvd = itemOrdered[i];
-        		System.out.printf("%d. %s\n", i, dvd.toString());
-    		}
-    		else {
-    			System.out.println("Not found the disc");
-    		}
-    	}
-    }
     public void removeDigitalVideoDisc(DigitalVideoDisc disc){
         if(qtyOrdered > 0){
             for (int i = 0; i < qtyOrdered; i++) {
@@ -100,6 +77,28 @@ public class Cart {
     		else {
     			itemOrdered[qtyOrdered++] = dvd2;
     			System.out.println("The disc " + dvd1.getTitle() + " and the disc " + dvd2.getTitle() + " has been added." );
+    		}
+    	}
+    }
+    public void search(int id) {
+    	for(int i = 0; i < qtyOrdered; i++) {
+    		if(id == itemOrdered[i].getID()) {
+    			DigitalVideoDisc dvd = itemOrdered[i];
+        		System.out.printf("%d. %s\n", i, dvd.toString());
+    		}
+    		else {
+    			System.out.println("Not found the disc");
+    		}
+    	}
+    }
+    public void search(String title) {
+    	for(int i = 0; i < qtyOrdered; i++) {
+    		if(title == itemOrdered[i].getTitle()) {
+    			DigitalVideoDisc dvd = itemOrdered[i];
+        		System.out.printf("%d. %s\n", i, dvd.toString());
+    		}
+    		else {
+    			System.out.println("Not found the disc");
     		}
     	}
     }
