@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 
 public class GarbageCreator {
     public static void main(String[] args) {
-        String filePath = "Garbage.txt"; // Đường dẫn tới file cần đọc
+        String filePath = "C:\Users\DANG\Documents\GitHub\OOP_20225800_Lab03\OtherProject\src\hust\soict\vn\garbage"; // Đường dẫn tới file cần đọc
         long start, finish;
 
         try {
