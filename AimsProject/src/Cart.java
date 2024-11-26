@@ -94,22 +94,27 @@ public class Cart {
     	for(int i = 0; i < qtyOrdered; i++) {
     		if(id == itemOrdered[i].getID()) {
     			DigitalVideoDisc dvd = itemOrdered[i];
-        		System.out.printf("%d. %s\n", i, dvd.toString());
+        		System.out.printf("%d. %s\n", i+1, dvd.toString());
+        		i = -1;
     		}
-    		else {
+    		if(i == -1) {
     			System.out.println("Not found the disc");
+    			break;
     		}
+
     	}
     }
     public void search(String title) {
     	for(int i = 0; i < qtyOrdered; i++) {
     		if(title == itemOrdered[i].getTitle()) {
     			DigitalVideoDisc dvd = itemOrdered[i];
-        		System.out.printf("%d. %s\n", i, dvd.toString());
+        		System.out.printf("%d. %s\n", i+1, dvd.toString());
+        		i = - 1;
     		}
-    		else {
+    		if(i == -1) {
     			System.out.println("Not found the disc");
-    		}
+    			break;
     	}
     }
+}
 }
