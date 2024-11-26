@@ -15,9 +15,9 @@ public class Cart {
     		}
     	}
     }
-    public void search(string title) {
+    public void search(String title) {
     	for(int i = 0; i < qtyOrdered; i++) {
-    		if(title == itemOrdered[i],getTitle()) {
+    		if(title == itemOrdered[i].getTitle()) {
     			DigitalVideoDisc dvd = itemOrdered[i];
         		System.out.printf("%d. %s\n", i, dvd.toString());
     		}
