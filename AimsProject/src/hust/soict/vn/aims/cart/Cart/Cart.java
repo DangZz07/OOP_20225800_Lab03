@@ -1,5 +1,5 @@
-package hust.soict.dsai.aims.cart.Cart;
-import hust.soict.dsai.aims.disc.Disc.DigitalVideoDisc;
+package hust.soict.vn.aims.cart.Cart;
+import hust.soict.vn.aims.disc.Disc.DigitalVideoDisc;
 
 public class Cart {
     public static final int MAX_NUMBERS_ORDERED = 20;
