@@ -1,3 +1,4 @@
+package hust.soict.vn.lab01.Bai62;
 import java.util.Scanner;
 public class bai62 {
 	public static void main(String args[]) {

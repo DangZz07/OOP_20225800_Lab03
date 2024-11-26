@@ -1,3 +1,4 @@
+package hust.soict.vn.lab01.Bai66;
 import java.util.Scanner; 
 
 public class bai67 {

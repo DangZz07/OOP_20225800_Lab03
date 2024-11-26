@@ -1,3 +1,4 @@
+package hust.soict.vn.lab01.Bai64;
 
 import java.util.Scanner;
 

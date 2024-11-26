@@ -1,3 +1,4 @@
+package hust.soict.vn.lab01.Bai226;
 import javax.swing.JOptionPane;
 public class bai226 {
     public static void main(String[] args){

@@ -1,3 +1,4 @@
+package hust.soict.vn.lab01.Bai225;
 import javax.swing.JOptionPane;
 
 public class bai225 {
