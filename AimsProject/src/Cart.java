@@ -6,9 +6,9 @@ public class Cart {
     public void printCart() {
     	System.out.println("***********************CART***********************");
     	System.out.println("Ordered Items:");
-    	for(int i = 1; i < qtyOrdered; i++) {
+    	for(int i = 0; i < qtyOrdered; i++) {
     		DigitalVideoDisc dvd = itemOrdered[i];
-    		System.out.printf("%d. %s\n", i, dvd.toString());
+    		System.out.printf("%d. %s\n", i+1, dvd.toString());
     	}
     	System.out.printf("Total cost: %.2f\n", totalCost());
     	System.out.println("***************************************************");
