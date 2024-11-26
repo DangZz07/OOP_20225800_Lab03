@@ -1,3 +1,4 @@
+package hust.soict.vn.lab01.Bai65;
 import java.util.Scanner;
 public class bai65 {
     public static int Sum(int arr[]){
