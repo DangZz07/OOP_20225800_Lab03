@@ -3,6 +3,29 @@ public class Cart {
     private DigitalVideoDisc itemOrdered[] = new DigitalVideoDisc[MAX_NUMBERS_ORDERED];
     public int qtyOrdered=0;
     
+    
+    public void search(int id) {
+    	for(int i = 0; i < qtyOrdered; i++) {
+    		if(id == itemOrdered[i].getID()) {
+    			DigitalVideoDisc dvd = itemOrdered[i];
+        		System.out.printf("%d. %s\n", i, dvd.toString());
+    		}
+    		else {
+    			System.out.println("Not found the disc");
+    		}
+    	}
+    }
+    public void search(string title) {
+    	for(int i = 0; i < qtyOrdered; i++) {
+    		if(title == itemOrdered[i],getTitle()) {
+    			DigitalVideoDisc dvd = itemOrdered[i];
+        		System.out.printf("%d. %s\n", i, dvd.toString());
+    		}
+    		else {
+    			System.out.println("Not found the disc");
+    		}
+    	}
+    }
     public void removeDigitalVideoDisc(DigitalVideoDisc disc){
         if(qtyOrdered > 0){
             for (int i = 0; i < qtyOrdered; i++) {
