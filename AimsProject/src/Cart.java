@@ -8,7 +8,7 @@ public class Cart {
     	System.out.println("Ordered Items:");
     	for(int i = 0; i < qtyOrdered; i++) {
     		DigitalVideoDisc dvd = itemOrdered[i];
-    		System.out.printf("%d. %s\n", i, dvd.toString());
+    		System.out.printf("%d. %s\n", i+1, dvd.toString());
     	}
     	System.out.printf("Total cost: %.2f\n", totalCost());
     	System.out.println("***************************************************");
