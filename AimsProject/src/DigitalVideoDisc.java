@@ -7,6 +7,12 @@ public class DigitalVideoDisc {
 	private String director;
 	private int length;
 	private float cost;
+	public int getID() {
+		return id;
+	}
+	public String toString() {
+		return String.format("DVD - [%s] - [%s] - [%s] - [%d]: [%.2f]$", title, category, director, length, cost);
+	}
 	public String getTitle() {
 		return title;
 	}
