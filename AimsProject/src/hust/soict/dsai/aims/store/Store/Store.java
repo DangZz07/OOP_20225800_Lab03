@@ -1,4 +1,4 @@
-package hust.soict.dsai.aims.store;
+package hust.soict.dsai.aims.store.Store;
 import hust.soict.dsai.aims.disc.Disc.DigitalVideoDisc;
 
 public class Store {
