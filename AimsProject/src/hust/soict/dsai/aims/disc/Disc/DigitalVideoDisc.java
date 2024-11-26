@@ -1,3 +1,4 @@
+package hust.soict.dsai.aims.disc.Disc;
 
 public class DigitalVideoDisc {
 	private int id;

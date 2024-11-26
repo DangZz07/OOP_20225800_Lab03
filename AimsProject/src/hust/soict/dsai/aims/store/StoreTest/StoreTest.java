@@ -1,3 +1,6 @@
+package hust.soict.dsai.aims.store.StoreTest;
+import hust.soict.dsai.aims.disc.Disc.DigitalVideoDisc;
+import hust.soict.dsai.aims.store.Store.Store;
 
 public class StoreTest {
 
